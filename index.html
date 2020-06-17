@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <p class="startText">あなたは何問解けるか？</p>
+    <p class="siteName">Let's クイズ</p> 
+  </header>
+  <p class="explan">ステージを選択してください</p>
+  <ul id="board"></ul>
+
+  <div id="mask" class="hidden"></div>
+  <div id="modal" class="hidden">
+    <div class="maincontena">
+      <p id="currentQ">1 - 1</p>
+      <section class="container">
+        <p id="question"></p>
+        <ul id="choices"></ul>
+      </section>
+      <div class="disabled" id="btn">次へ</div>
+  
+      <section id="result" class="hidden">
+        <p id="lastScore"></p>
+        <p id="lastComment"></p>
+        <div id="homeBtn">HOMEに戻る</div>
+      </section>
+    </div>
+    <div id="text" class="hidden">
+      <p id="correctAns" class="correct"></p>
+      <p id="comment" class="correct"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
